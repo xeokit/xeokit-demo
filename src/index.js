@@ -1,12 +1,23 @@
+//------------------------------------------------------------------------------------------------------------------
+// Import the modules we need for this example
+//------------------------------------------------------------------------------------------------------------------
+
 import {Viewer} from "../lib/xeokit/viewer/Viewer.js";
 import {XKTLoaderPlugin} from "../lib/xeokit/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js";
 import {NavCubePlugin} from "../lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js";
 import {CameraPathAnimation} from "../lib/xeokit/viewer/scene/camera/CameraPathAnimation.js";
 import {CameraPath} from "../lib/xeokit/viewer/scene/camera/CameraPath.js";
+import {Skybox} from "../lib/xeokit/viewer/scene/skybox/Skybox.js";
+import {Mesh} from "../lib/xeokit/viewer/scene/mesh/Mesh.js";
+import {ReadableGeometry} from "../lib/xeokit/viewer/scene/geometry/ReadableGeometry.js";
+import {buildPlaneGeometry} from "../lib/xeokit/viewer/scene/geometry/builders/buildPlaneGeometry.js";
+import {PhongMaterial} from "../lib/xeokit/viewer/scene/materials/PhongMaterial.js";
 
 //------------------------------------------------------------------------------------------------------------------
 // Create a Viewer, arrange the camera
 //------------------------------------------------------------------------------------------------------------------
+
+
 document.body.onload = function () {
     const viewer = new Viewer({
         canvasId: "myCanvas",
@@ -22,6 +33,22 @@ document.body.onload = function () {
 
     viewer.cameraControl.firstPerson = true;
     viewer.cameraFlight.fitFOV = 75;
+
+    // Ground plane
+
+    new Mesh(viewer.scene, {
+        geometry: new ReadableGeometry(viewer.scene, buildPlaneGeometry({
+            xSize: 2500,
+            zSize: 2500
+        })),
+        material: new PhongMaterial(viewer.scene, {
+            diffuse: [0.2, 0.7, 0.2],
+            backfaces: true
+        }),
+        position: [0, -2, 0],
+        pickable: false,
+        collidable: false
+    });
 
     const navCube = new NavCubePlugin(viewer, {
         canvasId: "myNavCubeCanvas",
@@ -41,6 +68,11 @@ document.body.onload = function () {
         src: "data/models/xkt/OTCConferenceCenter/OTCConferenceCenter.xkt",
         metaModelSrc: "data/metaModels/OTCConferenceCenter/metaModel.json",
         edges: true
+    });
+
+    new Skybox(viewer.scene, {
+        src: "data/textures/skyboxes/cloudySkyBox.jpg",
+        size: 1000
     });
 
     //----------------------------------------------------------------------------------------------------------------------
