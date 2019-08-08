@@ -1,259 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc513a09-e773-4ce3-a01f-f295378d1efc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/AnnotationsPlugin/Annotation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/AnnotationsPlugin/AnnotationsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/AxisGizmoPlugin/AxisGizmoPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/bimserverapipromise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/bimserverapiwebsocket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/bimserverclient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/geometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/ifc2x3tc1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/ifc4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerClient/translations_en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/BIMServerPerformanceGeometryLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/DataInputStreamReader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/EventHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/MetaDataReader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/Notifier.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/StringView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/defaultMaterials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/loadBIMServerMetaModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/preloadQuery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/lib/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/GLTFLoaderPlugin/GLTFDefaultDataSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/GLTFLoaderPlugin/GLTFLoaderPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/GLTFLoaderPlugin/GLTFPerformanceLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/GLTFLoaderPlugin/GLTFQualityLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/CubeTextureCanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/OBJLoaderPlugin/OBJLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/OBJLoaderPlugin/OBJLoaderPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/PlanViewsPlugin/IFCPlanViewObjectStates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/PlanViewsPlugin/PlanView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/PlanViewsPlugin/PlanViewsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/STLLoaderPlugin/STLLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/STLLoaderPlugin/STLLoaderPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/Control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/Overview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/Plane.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/SectionPlanesPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SkyboxesPlugin/SkyboxesPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SpinnerPlugin/SpinnerPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/StoreyViewsPlugin/IFCPlanViewObjectStates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/StoreyViewsPlugin/PlanRadarStoreyView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/StoreyViewsPlugin/PlanRadarStoreyViewsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XKTLoaderPlugin/XKTDefaultDataSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XKTLoaderPlugin/lib/pako.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/XML3DLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/XML3DLoaderPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/.jshintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/deflate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/inflate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/mime-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/pako/codecs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/arraybuffer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/base64.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/dataview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/lorem.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/lorem.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/lorem2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/lorem_store.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test10.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test11.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test12.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test13.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test14.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test15.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test16.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test17.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test17.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test18.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test18.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test19-codecs-interop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test20.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test20.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/test9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/tests/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/z-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/zip-ext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/zip-fs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/zip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XML3DLoaderPlugin/zipjs/zlib-asm/codecs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/Plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/Viewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/metadata/IFCObjectDefaults.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/metadata/MetaModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/metadata/MetaObject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/metadata/MetaScene.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/Component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/Entity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/PerformanceModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/PerformanceMesh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/PerformanceNode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingBuffer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingDrawRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingDrawShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingEdgesRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingEdgesShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingFillRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingFillShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingLayer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingOcclusionRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingOcclusionShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingPickDepthRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingPickDepthShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingPickMeshRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingPickMeshShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingPickNormalsRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/batching/batchingPickNormalsShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingDrawRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingDrawShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingEdgesRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingEdgesShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingFillRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingFillShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingLayer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingOcclusionRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingOcclusionShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingPickDepthRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingPickDepthShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingPickMeshRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingPickMeshShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingPickNormalsRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/instancing/instancingPickNormalsShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/renderFlags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/PerformanceModel/lib/renderPasses.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraControl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraFlightAnimation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPath.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPathAnimation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CustomProjection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Frustum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Ortho.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Perspective.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/canvas/Canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/canvas/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/Geometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/ReadableGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/VBOGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildBoxGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildCylinderGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildPlaneGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildSphereGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildTorusGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildVectorTextGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/loaders/load3DSGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/loaders/loadOBJGeometry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/libs/canvas2image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/libs/k3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/AmbientLight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/CubeTexture.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/DirLight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/Light.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/LightMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/PointLight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/ReflectionMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/Shadow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/marker/Marker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/EdgeMaterial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/EmphasisMaterial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/Fresnel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/LambertMaterial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/Material.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/MetallicMaterial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/PhongMaterial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/SpecularMaterial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/Texture.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/math/buildEdgeIndices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/math/geometryCompressionUtils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/math/math.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mementos/CameraMemento.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mementos/ObjectsMemento.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/Mesh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/draw/DrawRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/draw/DrawShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/emphasis/EmphasisEdgesRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/emphasis/EmphasisEdgesShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/emphasis/EmphasisFillRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/emphasis/EmphasisFillShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/occlusion/OcclusionRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/occlusion/OcclusionShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/pick/PickMeshRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/pick/PickMeshShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/pick/PickTriangleRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/pick/PickTriangleShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/shadow/ShadowRenderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/shadow/ShadowShaderSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/nodes/Node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/paths/CubicBezierCurve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/paths/Curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/paths/Path.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/paths/QuadraticBezierCurve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/paths/SplineCurve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/scene/Scene.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/scene/SceneState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/sectionPlane/SectionPlane.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/skybox/Skybox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/stats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/utils/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/utils/Queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/viewport/Viewport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/ArrayBuf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Attribute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Drawable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/FrameContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/OcclusionTester.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/PickResult.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Pickable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Program.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/RenderBuffer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/RenderFlags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/RenderState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Renderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Sampler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Shader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/Texture2D.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webgl/webglEnums.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/webglInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metaModels/OTCConferenceCenter/metaModel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/xkt/OTCConferenceCenter/OTCConferenceCenter.xkt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="cc513a09-e773-4ce3-a01f-f295378d1efc" name="Default Changelist" comment="Example tweaks">
+      <change afterPath="$PROJECT_DIR$/data/textures/skyboxes/cloudySkyBox.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/AnnotationsPlugin/AnnotationsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/AnnotationsPlugin/AnnotationsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/AxisGizmoPlugin/AxisGizmoPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/AxisGizmoPlugin/AxisGizmoPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/GLTFLoaderPlugin/GLTFLoaderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/GLTFLoaderPlugin/GLTFLoaderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/CubeTextureCanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/CubeTextureCanvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/OBJLoaderPlugin/OBJLoaderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/OBJLoaderPlugin/OBJLoaderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/PlanViewsPlugin/PlanViewsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/PlanViewsPlugin/PlanViewsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/Overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/SectionPlanesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SectionPlanesPlugin/SectionPlanesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/SpinnerPlugin/SpinnerPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/SpinnerPlugin/SpinnerPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/StoreyViewsPlugin/PlanRadarStoreyViewsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/StoreyViewsPlugin/PlanRadarStoreyViewsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/Component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Camera.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Camera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/ReadableGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/ReadableGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/VBOGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/VBOGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildBoxGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildBoxGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildCylinderGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildCylinderGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildPlaneGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildPlaneGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildSphereGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildSphereGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildTorusGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildTorusGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildVectorTextGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/builders/buildVectorTextGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/loaders/load3DSGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/loaders/load3DSGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/loaders/loadOBJGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/geometry/loaders/loadOBJGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/AmbientLight.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/AmbientLight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/DirLight.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/DirLight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/LightMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/LightMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/PointLight.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/PointLight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/ReflectionMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/lights/ReflectionMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/marker/Marker.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/marker/Marker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/EdgeMaterial.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/EdgeMaterial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/Fresnel.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/Fresnel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/LambertMaterial.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/LambertMaterial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/MetallicMaterial.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/MetallicMaterial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/PhongMaterial.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/PhongMaterial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/Texture.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/materials/Texture.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mementos/CameraMemento.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mementos/CameraMemento.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mementos/ObjectsMemento.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mementos/ObjectsMemento.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/Mesh.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/mesh/Mesh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/nodes/Node.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/nodes/Node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xeokit/viewer/scene/sectionPlane/SectionPlane.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xeokit/viewer/scene/sectionPlane/SectionPlane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metaModels/OTCConferenceCenter/metaModel.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metaModels/OTCConferenceCenter/metaModel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/xkt/OTCConferenceCenter/OTCConferenceCenter.xkt" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/xkt/OTCConferenceCenter/OTCConferenceCenter.xkt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -265,41 +64,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/xkt/OTCConferenceCenter/OTCConferenceCenter.xkt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metaModels/OTCConferenceCenter/metaModel.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="947">
+              <caret line="551" column="37" lean-forward="true" selection-start-line="551" selection-start-column="37" selection-end-line="551" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -307,22 +77,86 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4620">
+            <state relative-caret-position="975">
               <caret column="65434" selection-start-column="65434" selection-end-column="65434" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js">
+        <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Camera.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1087">
+              <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/CubeTextureCanvas.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="900">
+              <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/skybox/Skybox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc;n#Skybox#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPathAnimation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-448">
+              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+              <folding>
+                <element signature="n#!!doc;n#playToT#0;n#CameraPathAnimation#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPath.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="902">
+              <caret line="130" column="41" lean-forward="true" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+              <folding>
+                <element signature="n#!!doc;n#loadFrame#0;n#CameraPath#0" expanded="true" />
+                <element signature="n#!!doc;n#normalizeFrameTimes#0;n#CameraPath#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraFlightAnimation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="920">
+              <caret line="294" column="39" lean-forward="true" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="463" column="9" lean-forward="true" selection-start-line="463" selection-start-column="9" selection-end-line="463" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -336,6 +170,23 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>../src/viewer</find>
+      <find>fov</find>
+      <find>_ease</find>
+      <find>loadFrame</find>
+      <find>_fitFOV</find>
+      <find>flyTo</find>
+      <find>_cameraFitFOV</find>
+      <find>tan</find>
+      <find>normalizeFrameTimes</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>viewer</replace>
+      <replace>smoothFrameTimes</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -343,39 +194,84 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraControl.js" />
+        <option value="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPathAnimation.js" />
+        <option value="$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPath.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/xeokit-demo.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2023" />
-    <option name="y" value="94" />
-    <option name="width" value="2319" />
-    <option name="height" value="2006" />
+    <option name="x" value="1981" />
+    <option name="y" value="43" />
+    <option name="width" value="1920" />
+    <option name="height" value="2095" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="metaModels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="metaModels" type="462c0819:PsiDirectoryNode" />
+              <item name="OTCConferenceCenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="xkt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="xkt" type="462c0819:PsiDirectoryNode" />
+              <item name="OTCConferenceCenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+              <item name="skyboxes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -406,23 +302,66 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="xeokit" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="GLTFLoaderPlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="xeokit" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="NavCubePlugin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="metaModels" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="xeokit" type="462c0819:PsiDirectoryNode" />
+              <item name="viewer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="metaModels" type="462c0819:PsiDirectoryNode" />
-              <item name="OTCConferenceCenter" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="xeokit" type="462c0819:PsiDirectoryNode" />
+              <item name="viewer" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="xeokit" type="462c0819:PsiDirectoryNode" />
+              <item name="viewer" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="camera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="xeokit" type="462c0819:PsiDirectoryNode" />
+              <item name="viewer" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="xeokit" type="462c0819:PsiDirectoryNode" />
+              <item name="viewer" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="paths" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xeokit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="xeokit" type="462c0819:PsiDirectoryNode" />
+              <item name="viewer" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="skybox" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xeokit-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -433,24 +372,28 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/models/xkt" />
-      <recent name="$PROJECT_DIR$/metamodels" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/data/textures/skyboxes" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/lib/xeokit" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/models/xkt" />
+      <recent name="$PROJECT_DIR$/metamodels" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -473,13 +416,28 @@
       <option name="presentableId" value="Default" />
       <updated>1565011110956</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1565015464967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565015464967</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix CameraPathAnimation time normalization">
+      <created>1565164001829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565164001829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2023" y="94" width="2319" height="2006" extended-state="0" />
+    <frame x="1981" y="43" width="1920" height="2095" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30256855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3661749" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Gulp" order="3" side_tool="true" />
@@ -494,16 +452,33 @@
       <window_info anchor="bottom" id="Messages" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.512275" side_tool="true" weight="0.14137214" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4978166" weight="0.16633566" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48772505" visible="true" weight="0.12486883" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48772505" visible="true" weight="0.116290726" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24963856" />
-      <window_info anchor="right" id="Find" order="3" visible="true" weight="0.33771053" />
+      <window_info anchor="right" id="Find" order="3" weight="0.33771053" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Fix CameraPathAnimation time normalization" />
+    <MESSAGE value="Example tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Example tweaks" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPathAnimation.js</url>
+          <line>163</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -514,7 +489,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js">
+    <entry file="file://$PROJECT_DIR$/data/models/xkt/OTCConferenceCenter/OTCConferenceCenter.xkt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/metaModels/OTCConferenceCenter/metaModel.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -524,30 +502,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="474" column="33" selection-start-line="474" selection-start-column="33" selection-end-line="474" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc;n#panToPointer#0;n#CameraControl#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/paths/SplineCurve.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/input/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraFlightAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="294" column="39" lean-forward="true" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="551" column="37" lean-forward="true" selection-start-line="551" selection-start-column="37" selection-end-line="551" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPathAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="n#!!doc;n#playToT#0;n#CameraPathAnimation#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/CameraPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="130" column="41" lean-forward="true" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc;n#loadFrame#0;n#CameraPath#0" expanded="true" />
+            <element signature="n#!!doc;n#normalizeFrameTimes#0;n#CameraPath#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/camera/Camera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1087">
+          <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/CubeTextureCanvas.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="463" column="9" lean-forward="true" selection-start-line="463" selection-start-column="9" selection-end-line="463" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dist/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4620">
+        <state relative-caret-position="975">
           <caret column="65434" selection-start-column="65434" selection-end-column="65434" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/xkt/OTCConferenceCenter/OTCConferenceCenter.xkt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metaModels/OTCConferenceCenter/metaModel.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/lib/xeokit/viewer/scene/skybox/Skybox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc;n#Skybox#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="900">
+          <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
         </state>
       </provider>
     </entry>
