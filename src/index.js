@@ -5,9 +5,6 @@
 import {Viewer} from "../lib/xeokit/viewer/Viewer.js";
 import {XKTLoaderPlugin} from "../lib/xeokit/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js";
 import {NavCubePlugin} from "../lib/xeokit/plugins/NavCubePlugin/NavCubePlugin.js";
-import {CameraPathAnimation} from "../lib/xeokit/viewer/scene/camera/CameraPathAnimation.js";
-import {CameraPath} from "../lib/xeokit/viewer/scene/camera/CameraPath.js";
-import {Skybox} from "../lib/xeokit/viewer/scene/skybox/Skybox.js";
 import {Mesh} from "../lib/xeokit/viewer/scene/mesh/Mesh.js";
 import {ReadableGeometry} from "../lib/xeokit/viewer/scene/geometry/ReadableGeometry.js";
 import {buildPlaneGeometry} from "../lib/xeokit/viewer/scene/geometry/builders/buildPlaneGeometry.js";
@@ -16,7 +13,6 @@ import {PhongMaterial} from "../lib/xeokit/viewer/scene/materials/PhongMaterial.
 //------------------------------------------------------------------------------------------------------------------
 // Create a Viewer, arrange the camera
 //------------------------------------------------------------------------------------------------------------------
-
 
 document.body.onload = function () {
     const viewer = new Viewer({
@@ -29,23 +25,46 @@ document.body.onload = function () {
     viewer.scene.camera.up = [0.06, 0.96, 0.16];
     viewer.scene.camera.perspective.fov = 40;
 
-    viewer.scene.selectedMaterial.fillAlpha = 0.1;
+    viewer.scene.camera.zoom(25);
 
-    viewer.cameraControl.firstPerson = true;
-    viewer.cameraFlight.fitFOV = 75;
+    viewer.scene.highlightMaterial.fill = false;
+    viewer.scene.highlightMaterial.fillAlpha = 0.3;
+    viewer.scene.highlightMaterial.edgeColor = [1, 1, 0];
+
+    var lastEntity = null;
+
+    viewer.scene.input.on("mousemove", function (coords) {
+        var hit = viewer.scene.pick({
+            canvasPos: coords
+        });
+        if (hit) {
+            if (!lastEntity || hit.entity.id !== lastEntity.id) {
+                if (lastEntity) {
+                    lastEntity.highlighted = false;
+                }
+                lastEntity = hit.entity;
+                hit.entity.highlighted = true;
+            }
+        } else {
+            if (lastEntity) {
+                lastEntity.highlighted = false;
+                lastEntity = null;
+            }
+        }
+    });
 
     // Ground plane
 
     new Mesh(viewer.scene, {
         geometry: new ReadableGeometry(viewer.scene, buildPlaneGeometry({
-            xSize: 2500,
-            zSize: 2500
+            xSize: 3500,
+            zSize: 3500
         })),
         material: new PhongMaterial(viewer.scene, {
             diffuse: [0.2, 0.7, 0.2],
             backfaces: true
         }),
-        position: [0, -2, 0],
+        position: [0, -8, 0],
         pickable: false,
         collidable: false
     });
@@ -53,9 +72,6 @@ document.body.onload = function () {
     const navCube = new NavCubePlugin(viewer, {
         canvasId: "myNavCubeCanvas",
         visible: true,           // Initially visible (default)
-        size: 250,               // NavCube size in pixels (default is 200)
-        alignment: "topRight",   // Align NavCube to top-left of Viewer canvas
-        topMargin: 170,          // 170 pixels margin from top of Viewer canvas
         cameraFly: true,       // Fly camera to each selected axis/diagonal
         cameraFitFOV: 65,        // How much field-of-view the scene takes once camera has fitted it to view
         cameraFlyDuration: 0.5 // How long (in seconds) camera takes to fly to each new axis/diagonal
@@ -70,571 +86,88 @@ document.body.onload = function () {
         edges: true
     });
 
-    new Skybox(viewer.scene, {
-        src: "data/textures/skyboxes/cloudySkyBox.jpg",
-        size: 1000
-    });
+    //------------------------------------------------------------------------------------------------------------------
+    // When model loaded, create a tree view that toggles object xraying
+    //------------------------------------------------------------------------------------------------------------------
 
-    //----------------------------------------------------------------------------------------------------------------------
-    // When model loaded, fly camera long a path
-    //----------------------------------------------------------------------------------------------------------------------
+    const t0 = performance.now();
 
-    const positions = [
-        {
-            "t": 0,
-            "eye": [
-                10.449999809265137,
-                17.3799991607666,
-                -98.30999755859375
-            ],
-            "look": [
-                43.09000015258789,
-                0.5,
-                -26.760000228881836
-            ],
-            "up": [
-                0.05999999865889549,
-                0.9599999785423279,
-                0.1599999964237213
-            ]
-        },
-        {
-            "t": 1,
-            "eye": [
-                49.10879898071289,
-                9.237162590026855,
-                -99.9477310180664
-            ],
-            "look": [
-                49.10879898071289,
-                9.237162590026855,
-                -29.48837661743164
-            ],
-            "up": [
-                0,
-                1,
-                0
-            ]
-        },
-        {
-            "t": 2,
-            "eye": [
-                98.93108367919922,
-                9.237162590026855,
-                -79.31066131591797
-            ],
-            "look": [
-                49.10879898071289,
-                9.237162590026855,
-                -29.48837661743164
-            ],
-            "up": [
-                0,
-                1,
-                0
-            ]
-        },
-        {
-            "t": 3,
-            "eye": [
-                119.56815338134766,
-                9.237162590026855,
-                -29.48837661743164
-            ],
-            "look": [
-                49.10879898071289,
-                9.237162590026855,
-                -29.48837661743164
-            ],
-            "up": [
-                0,
-                1,
-                0
-            ]
-        },
-        {
-            "t": 4,
-            "eye": [
-                98.93108367919922,
-                9.237162590026855,
-                20.33390998840332
-            ],
-            "look": [
-                49.10879898071289,
-                9.237162590026855,
-                -29.48837661743164
-            ],
-            "up": [
-                0,
-                1,
-                0
-            ]
-        },
-        {
-            "t": 5,
-            "eye": [
-                49.10879898071289,
-                9.237162590026855,
-                40.970977783203125
-            ],
-            "look": [
-                49.10879898071289,
-                9.237162590026855,
-                -29.48837661743164
-            ],
-            "up": [
-                0,
-                1,
-                0
-            ]
-        },
-        {
-            "t": 6,
-            "eye": [
-                60.452980041503906,
-                5.4778642654418945,
-                7.06841516494751
-            ],
-            "look": [
-                60.452980041503906,
-                5.4778642654418945,
-                -63.39092254638672
-            ],
-            "up": [
-                0,
-                1,
-                0
-            ]
-        },
-        {
-            "t": 7,
-            "eye": [
-                67.25090789794922,
-                2.1742258071899414,
-                -25.556394577026367
-            ],
-            "look": [
-                67.25090789794922,
-                2.1742258071899414,
-                -96.0157470703125
-            ],
-            "up": [
-                0,
-                1,
-                0
-            ]
-        },
-        {
-            "t": 8,
-            "eye": [
-                68.87596130371094,
-                1.7158464193344116,
-                -42.77796173095703
-            ],
-            "look": [
-                -1.51083242893219,
-                -1.3406599760055542,
-                -43.723968505859375
-            ],
-            "up": [
-                -0.04337577521800995,
-                0.9990599155426025,
-                -0.0005829741712659597
-            ]
-        },
-        {
-            "t": 9,
-            "eye": [
-                75.52992248535156,
-                2.2329771518707275,
-                -58.72169876098633
-            ],
-            "look": [
-                26.099660873413086,
-                -1.021628737449646,
-                -8.616039276123047
-            ],
-            "up": [
-                -0.03243977576494217,
-                0.9989341497421265,
-                0.03288296237587929
-            ]
-        },
-        {
-            "t": 10,
-            "eye": [
-                40.69363784790039,
-                2.919964075088501,
-                -65.05496215820312
-            ],
-            "look": [
-                41.92532730102539,
-                9.625773429870605,
-                5.074016094207764
-            ],
-            "up": [
-                -0.0016713117947801948,
-                0.9954627156257629,
-                -0.0951581671833992
-            ]
-        },
-        {
-            "t": 11,
-            "eye": [
-                18.983766555786133,
-                2.655843496322632,
-                -64.64852142333984
-            ],
-            "look": [
-                20.215457916259766,
-                9.361654281616211,
-                5.480562686920166
-            ],
-            "up": [
-                -0.0016713117947801948,
-                0.9954627156257629,
-                -0.0951581671833992
-            ]
-        },
-        {
-            "t": 12,
-            "eye": [
-                9.118672370910645,
-                6.608935832977295,
-                -56.631927490234375
-            ],
-            "look": [
-                14.692089080810547,
-                10.801454544067383,
-                13.48182487487793
-            ],
-            "up": [
-                -0.004715084098279476,
-                0.9982303977012634,
-                -0.059315573424100876
-            ]
-        },
-        {
-            "t": 13,
-            "eye": [
-                12.325481414794922,
-                6.173153877258301,
-                -38.165767669677734
-            ],
-            "look": [
-                33.274269104003906,
-                9.972784042358398,
-                29.00037384033203
-            ],
-            "up": [
-                -0.016056619584560394,
-                0.9985471963882446,
-                -0.05148075148463249
-            ]
-        },
-        {
-            "t": 14,
-            "eye": [
-                13.830201148986816,
-                6.100258827209473,
-                -32.02607345581055
-            ],
-            "look": [
-                -54.385101318359375,
-                -11.52660083770752,
-                -32.77553176879883
-            ],
-            "up": [
-                -0.2501545250415802,
-                0.9682056307792664,
-                -0.0027484712190926075
-            ]
-        },
-        {
-            "t": 15,
-            "eye": [
-                15.001229286193848,
-                6.177117824554443,
-                -25.8507137298584
-            ],
-            "look": [
-                -53.21399688720703,
-                -11.449746131896973,
-                -26.60016632080078
-            ],
-            "up": [
-                -0.2501545250415802,
-                0.9682056307792664,
-                -0.0027484712190926075
-            ]
-        },
-        {
-            "t": 16,
-            "eye": [
-                13.10634994506836,
-                5.951435089111328,
-                -14.277751922607422
-            ],
-            "look": [
-                72.52796936035156,
-                -4.327131271362305,
-                -50.71895980834961
-            ],
-            "up": [
-                0.12435629218816757,
-                0.9893066883087158,
-                -0.07626304030418396
-            ]
-        },
-        {
-            "t": 17,
-            "eye": [
-                23.32726287841797,
-                5.76120662689209,
-                -15.126765251159668
-            ],
-            "look": [
-                27.343843460083008,
-                -0.392856627702713,
-                -85.20191955566406
-            ],
-            "up": [
-                0.0049982876516878605,
-                0.9961833357810974,
-                -0.08719765394926071
-            ]
-        },
-        {
-            "t": 18,
-            "eye": [
-                29.602476119995117,
-                6.041967868804932,
-                -14.791736602783203
-            ],
-            "look": [
-                33.61904525756836,
-                -0.11209755390882492,
-                -84.86698150634766
-            ],
-            "up": [
-                0.0049982876516878605,
-                0.9961833357810974,
-                -0.08719765394926071
-            ]
-        },
-        {
-            "t": 19,
-            "eye": [
-                29.600866317749023,
-                5.945443630218506,
-                -27.180505752563477
-            ],
-            "look": [
-                -39.207435607910156,
-                0.9682354927062988,
-                -41.505836486816406
-            ],
-            "up": [
-                -0.06915532797574997,
-                0.9975070953369141,
-                -0.014397842809557915
-            ]
-        },
-        {
-            "t": 20,
-            "eye": [
-                14.093534469604492,
-                5.877283096313477,
-                -31.99447250366211
-            ],
-            "look": [
-                -56.21117401123047,
-                1.3034216165542603,
-                -32.95225143432617
-            ],
-            "up": [
-                -0.06490764766931534,
-                0.997896134853363,
-                -0.00088452675845474
-            ]
-        },
-        {
-            "t": 21,
-            "eye": [
-                7.193114757537842,
-                4.652937889099121,
-                -31.983610153198242
-            ],
-            "look": [
-                -1.2233401536941528,
-                -6.07865571975708,
-                37.14375305175781
-            ],
-            "up": [
-                -0.01840820163488388,
-                0.9883388876914978,
-                0.15119116008281708
-            ]
-        },
-        {
-            "t": 22,
-            "eye": [
-                6.993342399597168,
-                3.009431838989258,
-                -25.73332405090332
-            ],
-            "look": [
-                76.40155792236328,
-                -8.766175270080566,
-                -22.826677322387695
-            ],
-            "up": [
-                0.1669786274433136,
-                0.9859421849250793,
-                0.006992913316935301
-            ]
-        },
-        {
-            "t": 23,
-            "eye": [
-                6.993342399597168,
-                3.009431838989258,
-                -25.73332405090332
-            ],
-            "look": [
-                76.40155792236328,
-                -8.766175270080566,
-                -22.826677322387695
-            ],
-            "up": [
-                0.1669786274433136,
-                0.9859421849250793,
-                0.006992913316935301
-            ]
-        },
-        {
-            "t": 24,
-            "eye": [
-                6.993342399597168,
-                3.009431838989258,
-                -25.73332405090332
-            ],
-            "look": [
-                -8.292724609375,
-                44.24230194091797,
-                29.319093704223633
-            ],
-            "up": [
-                0.1565653532743454,
-                0.8108972907066345,
-                -0.5638681650161743
-            ]
-        },
-        {
-            "t": 25,
-            "eye": [
-                6.993342399597168,
-                3.009431838989258,
-                -25.73332405090332
-            ],
-            "look": [
-                -31.262920379638672,
-                62.16260528564453,
-                -27.14556121826172
-            ],
-            "up": [
-                0.8389599919319153,
-                0.5433249473571777,
-                0.030968336388468742
-            ]
-        },
-        {
-            "t": 26,
-            "eye": [
-                6.993342399597168,
-                3.009431838989258,
-                -25.73332405090332
-            ],
-            "look": [
-                -13.927155494689941,
-                28.453279495239258,
-                -88.01988220214844
-            ],
-            "up": [
-                0.11497681587934494,
-                0.932532012462616,
-                0.3423153758049011
-            ]
-        },
-        {
-            "t": 27,
-            "eye": [
-                6.993342399597168,
-                3.009431838989258,
-                -25.73332405090332
-            ],
-            "look": [
-                77.2800064086914,
-                -1.8678998947143555,
-                -26.56573486328125
-            ],
-            "up": [
-                0.06921900063753128,
-                0.9976098537445068,
-                -0.000818573753349483
-            ]
-        },
-        {
-            "t": 28,
-            "eye": [
-                13.432293891906738,
-                2.444504499435425,
-                -23.940013885498047
-            ],
-            "look": [
-                37.39179992675781,
-                4.128542423248291,
-                -90.18046569824219
-            ],
-            "up": [
-                -0.008127529174089432,
-                0.9997235536575317,
-                0.022473540157079697
-            ]
-        }
-    ];
-
-    var cameraPath = new CameraPath(viewer.scene, {
-        frames: positions
-    });
-
-    cameraPath.smoothFrameTimes(1);
-
-    var cameraPathAnimation = new CameraPathAnimation(viewer.scene, {
-        cameraPath: cameraPath,
-        playingRate: 0.0005
-    });
+    //  document.getElementById("time").innerHTML = "Loading model...";
 
     model.on("loaded", function () {
-        setTimeout(function () {
-            cameraPathAnimation.play(0);
-        }, 1000);
+
+        const t1 = performance.now();
+        // document.getElementById("time").innerHTML = "Model loaded in " + Math.floor(t1 - t0) + " milliseconds<br>Objects: " + model.numEntities + "<br>Triangles: " + model.numTriangles;
+
+        // Builds tree view data from MetaModel
+        var createData = function (metaModel) {
+            const data = [];
+
+            function visit(expand, data, metaObject) {
+                if (!metaObject) {
+                    return;
+                }
+                var child = {
+                    id: metaObject.id,
+                    text: metaObject.name
+                };
+                data.push(child);
+                const children = metaObject.children;
+                if (children) {
+                    child.children = [];
+                    for (var i = 0, len = children.length; i < len; i++) {
+                        visit(true, child.children, children[i]);
+                    }
+                }
+            }
+
+            visit(true, data, metaModel.rootMetaObject);
+            return data;
+        };
+
+        // Get MetaModel we loaded for our model
+        const modelId = model.id;
+        const metaModel = viewer.metaScene.metaModels[modelId];
+
+        // Create the tree view
+        var treeView = new InspireTree({
+            selection: {
+                autoSelectChildren: true,
+                autoDeselect: true,
+                mode: 'checkbox'
+            },
+            checkbox: {
+                autoCheckChildren: true
+            },
+            data: createData(metaModel)
+        });
+
+        new InspireTreeDOM(treeView, {
+            target: document.getElementById("treePanel")
+        });
+
+        // Initialize the tree view once loaded
+        treeView.on('model.loaded', function () {
+
+            treeView.select();
+
+            treeView.model.expand();
+            treeView.model[0].children[0].expand();
+            treeView.model[0].children[0].children[0].expand();
+
+            treeView.on('node.checked', function (event, node) {
+                const objectId = event.id;
+                viewer.scene.setObjectsXRayed(objectId, false);
+                viewer.scene.setObjectsCollidable(objectId, true);
+                viewer.scene.setObjectsPickable(objectId, true);
+            });
+
+            treeView.on('node.unchecked', function (event, node) {
+                const objectId = event.id;
+                viewer.scene.setObjectsXRayed(objectId, true);
+                viewer.scene.setObjectsCollidable(objectId, false);
+                viewer.scene.setObjectsPickable(objectId, false);
+            });
+        });
     });
-
-    window.viewer = viewer;
-
-    window.positions = positions;
-
-    viewer.scene.input.on("keydown", function () {
-        positions.push({
-            t: positions.length,
-            eye: [viewer.scene.camera.eye[0], viewer.scene.camera.eye[1], viewer.scene.camera.eye[2]],
-            look: [viewer.scene.camera.look[0], viewer.scene.camera.look[1], viewer.scene.camera.look[2]],
-            up: [viewer.scene.camera.up[0], viewer.scene.camera.up[1], viewer.scene.camera.up[2]]
-        })
-    })
-
-    window.get = function () {
-        console.log(JSON.stringify(positions, null, "\t"));
-    }
 };
