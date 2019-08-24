@@ -23,9 +23,7 @@ document.body.onload = function () {
     viewer.scene.camera.eye = [10.45, 17.38, -98.31];
     viewer.scene.camera.look = [43.09, 0.5, -26.76];
     viewer.scene.camera.up = [0.06, 0.96, 0.16];
-    viewer.scene.camera.perspective.fov = 40;
-
-    viewer.scene.camera.zoom(25);
+   
 
     viewer.scene.xrayMaterial.fill=false;
     viewer.scene.xrayMaterial.fillAlpha = 0.1;
