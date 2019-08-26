@@ -1,1 +1,1 @@
-# xeokit-demo
+# xeokit-webpack
